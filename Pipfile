@@ -1,0 +1,19 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+pipenv = "*"
+django = "<2.1,>2.0"
+graphene-django = {ref = "v2.1rc1", git = "https://github.com/graphql-python/graphene-django.git"}
+black = "*"
+
+[dev-packages]
+pytest = "*"
+pytest-django = "*"
+pytest-cov = "*"
+model-mommy = "*"
+
+[requires]
+python_version = "3.6"
