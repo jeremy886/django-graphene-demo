@@ -1,9 +1,10 @@
 import graphene
 
-class Queries(
-    graphene.ObjectType
-):
-    dummy = graphene.String()
+import simple_app.schema
 
 
-schema = graphene.Schema(query=Queries)
+class Query(simple_app.schema.Query, graphene.ObjectType):
+    pass
+
+
+schema = graphene.Schema(query=Query)
