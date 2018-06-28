@@ -9,7 +9,7 @@ pytestmark = pytest.mark.django_db
 
 
 def test_message_type():
-    instance = schema.MessageType()
+    instance = schema.MessageNode()
     assert instance
 
 
