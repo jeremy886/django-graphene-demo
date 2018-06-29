@@ -7,6 +7,7 @@ name = "pypi"
 pipenv = "*"
 django = "<2.1,>2.0"
 graphene-django = {ref = "v2.1rc1", git = "https://github.com/graphql-python/graphene-django.git"}
+django-filter = "*"
 
 [dev-packages]
 pytest = "*"
